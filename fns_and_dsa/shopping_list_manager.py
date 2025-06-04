@@ -14,11 +14,11 @@ def main():
         if choice == 1:
             item = input("What item would you like to add? ")
             if item:
-                shopping_list.apped(item)
+                shopping_list.append(item)
             pass
         elif choice == 2:
-            item = input("What item do you intend to remove? ")
-            if item in shopping_list:
+            item_to_be_deleted = input("What item do you intend to remove? ")
+            if item_to_be_deleted in shopping_list:
                 shopping_list.remove(item)
             else:
                 print("Item not in shopping list")
