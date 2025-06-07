@@ -15,7 +15,7 @@ if number_of_days:
         original_datetime = datetime.strptime(display_current_datetime(), date_format)
         time_delta = timedelta(days=number_of_days)
         new_datetime = original_datetime + time_delta
-        future_date = new_datetime.strftime(date_format)
-        return future_date
+        future_date = new_datetime
+        return future_date.strftime(date_format)
     
 print(f"Future date: {calculate_future_date()}")
