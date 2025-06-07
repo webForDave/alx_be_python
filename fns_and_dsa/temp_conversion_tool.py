@@ -13,7 +13,7 @@ temperature_unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): "
 if temperature_unit not in ['c', 'f']:
     raise ValueError("Invalid temperature unit")
 if type(temperature) != float:
-    raise ValueError('Invalid temperature value')
+    raise ValueError("Invalid temperature. Please enter a numeric value.")
 else:
     if temperature_unit == 'f':
         print(f"{temperature}°F is {convert_to_celsius(temperature)}°C")
