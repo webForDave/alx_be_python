@@ -7,12 +7,12 @@ class Test(unittest.TestCase):
         self.cal = SimpleCalculator()
 
 
-    def test_add(self):
+    def test_addition(self):
         self.assertEqual(self.cal.add(10, 5), 15)
         self.assertEqual(self.cal.add(2, 4), 6)
         self.assertEqual(self.cal.add(1, 3), 4)
     
-    def test_subtract(self):
+    def test_subtraction(self):
         self.assertEqual(self.cal.subtract(12, 6), 6)
         self.assertEqual(self.cal.subtract(6, 12), -6)
         self.assertEqual(self.cal.subtract(10, 3), 7)
